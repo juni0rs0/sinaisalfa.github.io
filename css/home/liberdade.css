@@ -1,0 +1,62 @@
+.liberdade-bg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 320px;
+}
+
+.liberdade h2 {
+  padding-left: 30px;
+  padding-bottom: 70px;
+  grid-column: 1/-1;
+  margin: 0 50px;
+}
+
+.liberdade {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.liberdade-conteudo {
+  display: grid;
+  gap: 30px;
+  align-items: start;
+}
+
+.liberdade-conteudo p {
+  padding: 0 50px;
+  font-size: 1.2rem;
+  margin-right: 30px;
+}
+
+.liberdade img {
+  padding-right: 60px;
+  place-self: start center;
+}
+
+@media (max-width: 1000px) {
+    .liberdade-conteudo p {
+      font-size: 1rem;
+    }
+}
+
+@media (max-width: 800px) {
+  .liberdade-bg {
+    padding-top: 70px;
+  }
+  .liberdade {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .liberdade img {
+    max-height: 200px;
+    grid-row: 2;
+    padding-bottom: 40px;
+    align-items: center;
+    padding-right: 10px;
+
+  }
+  .liberdade h2 {
+    font-size: 1.1rem;
+  }
+}
